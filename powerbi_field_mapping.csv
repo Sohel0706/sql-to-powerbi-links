@@ -1,0 +1,251 @@
+Page,Page URL,Slicer name,Table,Field,Values,Value Example,DAX applied
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Product Category,project,Project_Product_Category,"Beverage, Dairy, Food",Beverage,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Sector,project_country,Sector,"AMESA, LAB, PBNA, APAC, LAF, PFNA, EUROPE, N/A",AMESA,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Project Type,project_type,Project Sub Type (Groups),"CC, INNO",CC,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Anchor Market,project_country,Anchor Market,"Anchor, Non-Anchor",Anchor,"Anchor Market = 
+ 
+IF(
+    'project_country'[Country] 
+    
+    IN {""Brazil"",
+        ""Canada"",
+         ""China (Mainland)"",
+         ""China (Hong Kong)"",
+         ""China (Taiwan)"",
+         ""Egypt"",
+         ""India"",
+         ""Mexico"",
+         ""Pakistan"",
+         ""Saudi Arabia"",
+         ""Thailand"",
+         ""Turkey"",
+         ""United Kingdom"",
+         ""USA"",
+         ""Vietnam""
+         },
+    ""Anchor"",
+    ""Non-Anchor""
+)"
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Project Complexity Type,project,Technical Complexity,"Blank, Import/Export, Medium Complexity, Alternative Existing Process, Import/Export Express, High Complexity, Low Complexity",Blank,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Launch Year,project,Project Launch Date,"2024, 2025, 2026 etc",2024,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Launch Type,project,Launch Type,"Blank, LTO, LTO Customer, Permanent 52W",Blank,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Brand,product,Product Brand,"7DAYS, 7UP, A&W, ALE81, ALO, ALPENLIEBE, ALS BEVERAGE, ALVALLE, AQUA MINERALE, AQUAFINA, ASSORTED BRANDS, AUNT ROSIES, BAI, BAKEN-ETS, BANG, BARE, BELGIAN, BENENUTS, BIG BLUE, BIG RED, BRISK, BUBBLR, BUBLY, BUNDABERG, CALEBS KOLA, CANADA DRY, CAP N CRUNCH, CEREZZA, CHEERWINE, CHEETOS, CHESTERS, CHOBANI, CHOKIS, CHUPA CHUPS, CISOWIANKA, CITRUS BLAST, CITRUS SPRINGS, CLIMAX, COOL ATTITUDES, COOPERS, COPELLA, CORE, COUNTRY TIME, CRACKER JACK, CREEKSIDE, CRISP AND CLEAR, CRUSH, CRYSTAL CASCADE, DOC, DOLE, DORITOS, DR PEPPER, DR WHAM, DRIFTWELL, DRIVE ME, DUYVIS, EVEREST, EVIAN, EVOLVE, FAST TWITCH, FIJI, FINETI, FISHERMANS FRIEND, FLAVOR WORKS, FRITOS, FRUIT SHOOT, FRUIT WORKS, FRUITTELLA, FRUKO, FRUTLY, FUNYUNS, GATORADE, GORSKA NATURA, GRANDMAS, GRAPICO, GREAT BASIN, GURU, H20H, HARVEST SQUEEZE, HAWAII VOLCANIC, HAWAIIAN PUNCH, HOG WASH, HRUSTEAM, HYPER, IBC, INIT, IZZE, JOGUE, JOLLY RANCHER, JUICE TYME, JULUIS, JUMEX, JUNKANOO, KAS MAS, KERRY, KEVITA, KLARBRUNN, KRYSTALICZNE, KURKURE, LA COCINA DE JOSEFINA, LAVAZZA, LAYS, LEMON-X, LIFE, LIFEWTR, LIPTON, MANZANITA SOL, MARKET DELI, MAUI STYLE, MENEHUNE, MENTOS, MIRINDA, MISS VICKIES, MIST TWIST, MONTELLIER, MOR, MOTTS, MR SNAKI, MTN DEW, MUG, MULTI FLOW, MUNCHIES, MUNCHOS, MUSCLE MILK, NAKED, NATURES TWIST, NEHI, NEON ZEBRA, NEW BRAND, NIAGARA, NOBBYS, NON BRANDED, NOO FUZION, NOT APPLICABLE, NUGRAPE, OCEAN SPRAY, OFF THE EATEN PATH, ONE, ORANGE BANG, PATIO, PEARL MILLING COMPANY, PENN DUTCH, PEPSI, PIPERS, PLAN (COLA PG BRAND), PLAN (OATMEAL PG BRAND), PLAN (PASTRIES - WHEAT PG BRAND), PLAN (POTATO CHIPS PG BRAND), PLAN (SPORTS DRINKS PG BRAND), PLAN (WAFERS PG BRAND), POLAR, POLAR SHOCK, POP WORKS, POPCORNERS, POPWORKS, PRIVATE LABEL, PROPEL, PROUD SOURCE, PUKKA, PURE LEAF, QUAKER, RANCHERITOS, RED ROCK DELI, REDLINE, REFRASIA, REIGN, RICOLA, ROCHESTER, ROCKSTAR, ROLD GOLD, ROYAL CROWN, ROYAL HAWAIIAN, RUFFLES, SABRA, SABRITAS, SANDIA, SANDIA SOL, SANTITAS, SCHWEPPES, SCHWIP SCHWAP, SCOTTS, SEAGRAMS, SEAMANS, SEASONS HARVEST, SENSATIONS, SETHNESS, SIBERIAN CHILL, SIERRA MIST, SLICE, SMARTFOOD, SMITHS, SNACK A JACKS, SNAPPLE, SOBE, SODASTREAM, SOULBOOST, SQUIRT, STACYS, STAR, STARBUCKS, STUBBORN, SUN CHIPS, SUNBITES, SUNBREAKS, SUNDROP, SUNFRESH, SUNKIST, SUNNY SKY, SUSSEX, T2, TAHITIAN TREAT, TALKING RAIN, TAMPICO, TAZO, TEA KITCHEN, TODDY, TOMA, TOSTITOS, TROPICANA, TRU ADE, TURBOS, TWISTED, TWISTER, TWISTOS, UNMUDDLED, VENOM, VERMONT, VERNORS, VITA COCO, VITA ICE, VIVA SOL, VOSS, WALKERS, WELCHS, XYIENCE, YACHAK, YEDIGUN, YOO-HOO, YULA",7DAYS,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Product Line,product,Product Line,"ALL OTHER FOODS, CARBONATED SOFT DRINKS (CSD), COFFEE, CONFECTIONERY, COOKIES, CRACKERS, DIPS AND SALSA, ENERGY, FROZEN, FRUIT (EXCLUDE JUICE), GRAINS - CORN, GRAINS - OATS, GRAINS - RICE, GRAINS - WHEAT, JUICE, MODERN DAIRY, NEW, NON FOOD ITEMS, NUTS AND SEEDS, PL_Commercialization, POWER OF ONE, PROTEIN, SALTY, SAVORY, SPORTS, TEA, WATER",ALL OTHER FOODS,
+Summary,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/da516d60701ac009138b?experience=power-bi,Status,project,Project Status,"Active, Closed, Draft, Launch, Prioritized (go to stage-gate)",Active,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Product Category,project,Project Product Category,"Beverage, Dairy, Food",Beverage,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Sector,project_country,Sector,"AMESA, LAB, PBNA, APAC, LAF, PFNA, EUROPE, N/A",AMESA,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Project Type,project_type,Project Sub Type (Groups),"CC, INNO",CC,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Anchor Market,project_country,Anchor Market,"Anchor, Non-Anchor",Anchor,"Anchor Market = 
+ 
+IF(
+    'project_country'[Country] 
+    
+    IN {""Brazil"",
+        ""Canada"",
+         ""China (Mainland)"",
+         ""China (Hong Kong)"",
+         ""China (Taiwan)"",
+         ""Egypt"",
+         ""India"",
+         ""Mexico"",
+         ""Pakistan"",
+         ""Saudi Arabia"",
+         ""Thailand"",
+         ""Turkey"",
+         ""United Kingdom"",
+         ""USA"",
+         ""Vietnam""
+         },
+    ""Anchor"",
+    ""Non-Anchor""
+)"
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Project Complexity Type,project,Technical Complexity,"Blank, Import/Export, Medium Complexity, Alternative Existing Process, Import/Export Express, High Complexity, Low Complexity",Blank,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Launch Year,project,Project Launch Date,"2024, 2025, 2026 etc",2024,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Launch Type,project,Launch Type,"Blank, LTO, LTO Customer, Permanent 52W",Blank,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Brand,product,Product Brand,"7DAYS, 7UP, A&W, ALE81, ALO, ALPENLIEBE, ALS BEVERAGE, ALVALLE, AQUA MINERALE, AQUAFINA, ASSORTED BRANDS, AUNT ROSIES, BAI, BAKEN-ETS, BANG, BARE, BELGIAN, BENENUTS, BIG BLUE, BIG RED, BRISK, BUBBLR, BUBLY, BUNDABERG, CALEBS KOLA, CANADA DRY, CAP N CRUNCH, CEREZZA, CHEERWINE, CHEETOS, CHESTERS, CHOBANI, CHOKIS, CHUPA CHUPS, CISOWIANKA, CITRUS BLAST, CITRUS SPRINGS, CLIMAX, COOL ATTITUDES, COOPERS, COPELLA, CORE, COUNTRY TIME, CRACKER JACK, CREEKSIDE, CRISP AND CLEAR, CRUSH, CRYSTAL CASCADE, DOC, DOLE, DORITOS, DR PEPPER, DR WHAM, DRIFTWELL, DRIVE ME, DUYVIS, EVEREST, EVIAN, EVOLVE, FAST TWITCH, FIJI, FINETI, FISHERMANS FRIEND, FLAVOR WORKS, FRITOS, FRUIT SHOOT, FRUIT WORKS, FRUITTELLA, FRUKO, FRUTLY, FUNYUNS, GATORADE, GORSKA NATURA, GRANDMAS, GRAPICO, GREAT BASIN, GURU, H20H, HARVEST SQUEEZE, HAWAII VOLCANIC, HAWAIIAN PUNCH, HOG WASH, HRUSTEAM, HYPER, IBC, INIT, IZZE, JOGUE, JOLLY RANCHER, JUICE TYME, JULUIS, JUMEX, JUNKANOO, KAS MAS, KERRY, KEVITA, KLARBRUNN, KRYSTALICZNE, KURKURE, LA COCINA DE JOSEFINA, LAVAZZA, LAYS, LEMON-X, LIFE, LIFEWTR, LIPTON, MANZANITA SOL, MARKET DELI, MAUI STYLE, MENEHUNE, MENTOS, MIRINDA, MISS VICKIES, MIST TWIST, MONTELLIER, MOR, MOTTS, MR SNAKI, MTN DEW, MUG, MULTI FLOW, MUNCHIES, MUNCHOS, MUSCLE MILK, NAKED, NATURES TWIST, NEHI, NEON ZEBRA, NEW BRAND, NIAGARA, NOBBYS, NON BRANDED, NOO FUZION, NOT APPLICABLE, NUGRAPE, OCEAN SPRAY, OFF THE EATEN PATH, ONE, ORANGE BANG, PATIO, PEARL MILLING COMPANY, PENN DUTCH, PEPSI, PIPERS, PLAN (COLA PG BRAND), PLAN (OATMEAL PG BRAND), PLAN (PASTRIES - WHEAT PG BRAND), PLAN (POTATO CHIPS PG BRAND), PLAN (SPORTS DRINKS PG BRAND), PLAN (WAFERS PG BRAND), POLAR, POLAR SHOCK, POP WORKS, POPCORNERS, POPWORKS, PRIVATE LABEL, PROPEL, PROUD SOURCE, PUKKA, PURE LEAF, QUAKER, RANCHERITOS, RED ROCK DELI, REDLINE, REFRASIA, REIGN, RICOLA, ROCHESTER, ROCKSTAR, ROLD GOLD, ROYAL CROWN, ROYAL HAWAIIAN, RUFFLES, SABRA, SABRITAS, SANDIA, SANDIA SOL, SANTITAS, SCHWEPPES, SCHWIP SCHWAP, SCOTTS, SEAGRAMS, SEAMANS, SEASONS HARVEST, SENSATIONS, SETHNESS, SIBERIAN CHILL, SIERRA MIST, SLICE, SMARTFOOD, SMITHS, SNACK A JACKS, SNAPPLE, SOBE, SODASTREAM, SOULBOOST, SQUIRT, STACYS, STAR, STARBUCKS, STUBBORN, SUN CHIPS, SUNBITES, SUNBREAKS, SUNDROP, SUNFRESH, SUNKIST, SUNNY SKY, SUSSEX, T2, TAHITIAN TREAT, TALKING RAIN, TAMPICO, TAZO, TEA KITCHEN, TODDY, TOMA, TOSTITOS, TROPICANA, TRU ADE, TURBOS, TWISTED, TWISTER, TWISTOS, UNMUDDLED, VENOM, VERMONT, VERNORS, VITA COCO, VITA ICE, VIVA SOL, VOSS, WALKERS, WELCHS, XYIENCE, YACHAK, YEDIGUN, YOO-HOO, YULA",7DAYS,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Product Line,product,Product Line,"ALL OTHER FOODS, CARBONATED SOFT DRINKS (CSD), COFFEE, CONFECTIONERY, COOKIES, CRACKERS, DIPS AND SALSA, ENERGY, FROZEN, FRUIT (EXCLUDE JUICE), GRAINS - CORN, GRAINS - OATS, GRAINS - RICE, GRAINS - WHEAT, JUICE, MODERN DAIRY, NEW, NON FOOD ITEMS, NUTS AND SEEDS, PL_Commercialization, POWER OF ONE, PROTEIN, SALTY, SAVORY, SPORTS, TEA, WATER",ALL OTHER FOODS,
+Brand Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/17fffc925a24314993bf?experience=power-bi,Status,project,Project Status,"Active, Closed, Draft, Launch, Prioritized (go to stage-gate)",Active,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Product Category,project,Project Product Category,"Beverage, Dairy, Food",Beverage,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Sector,project_country,Sector,"AMESA, LAB, PBNA, APAC, LAF, PFNA, EUROPE, N/A",AMESA,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Project Type,project_type,Project Sub Type (Groups),"CC, INNO",CC,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Anchor Market,project_country,Anchor Market,"Anchor, Non-Anchor",Anchor,"Anchor Market = 
+ 
+IF(
+    'project_country'[Country] 
+    
+    IN {""Brazil"",
+        ""Canada"",
+         ""China (Mainland)"",
+         ""China (Hong Kong)"",
+         ""China (Taiwan)"",
+         ""Egypt"",
+         ""India"",
+         ""Mexico"",
+         ""Pakistan"",
+         ""Saudi Arabia"",
+         ""Thailand"",
+         ""Turkey"",
+         ""United Kingdom"",
+         ""USA"",
+         ""Vietnam""
+         },
+    ""Anchor"",
+    ""Non-Anchor""
+)"
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Project Complexity Type,project,Technical Complexity,"Blank, Import/Export, Medium Complexity, Alternative Existing Process, Import/Export Express, High Complexity, Low Complexity",Blank,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Stage Gate Pathway,project,Stage Gate Pathway Cleaned,"Undefined, Stage Gate, Stage Gate Plus, Stage Gate Minus",Undefined,"Stage Gate Pathway Cleaned = 
+    SWITCH(
+        'project'[Stage Gate Pathway],
+        ""Rapid Response (TBS)"", ""Rapid Response"",
+        ""Sensitive (TBS)"", ""Sensitive"",
+        ""Stage Gate (CC)"", ""Stage Gate"",
+        ""Stage Gate (INNO)"", ""Stage Gate"",
+        ""Stage Gate (PRD)"", ""Stage Gate"",
+        ""Stage Gate (VE)"", ""Stage Gate"",
+        ""Stage Gate (TBS)"", ""Stage Gate"",
+        ""Stage Gate Minus (CC)"", ""Stage Gate Minus"",
+        ""Stage Gate Minus (INNO)"", ""Stage Gate Minus"",
+        ""Stage Gate Plus (CC)"", ""Stage Gate Plus"",
+        ""Stage Gate Plus (INNO)"", ""Stage Gate Plus"",
+        ""Stage Gate Plus (PRD)"", ""Stage Gate Plus"",
+        ""Stage Gate Plus (TBS)"", ""Stage Gate Plus"",
+        ""Stage Gate Plus (VE)"", ""Stage Gate Plus"",
+        ""Undefined""  // Default if no match
+    )"
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Launch Year,project,Project Launch Date,"2024, 2025, 2026 etc",2024,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Launch Type,project,Launch Type,"Blank, LTO, LTO Customer, Permanent 52W",Blank,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Brand,product,Product Brand,"7DAYS, 7UP, A&W, ALE81, ALO, ALPENLIEBE, ALS BEVERAGE, ALVALLE, AQUA MINERALE, AQUAFINA, ASSORTED BRANDS, AUNT ROSIES, BAI, BAKEN-ETS, BANG, BARE, BELGIAN, BENENUTS, BIG BLUE, BIG RED, BRISK, BUBBLR, BUBLY, BUNDABERG, CALEBS KOLA, CANADA DRY, CAP N CRUNCH, CEREZZA, CHEERWINE, CHEETOS, CHESTERS, CHOBANI, CHOKIS, CHUPA CHUPS, CISOWIANKA, CITRUS BLAST, CITRUS SPRINGS, CLIMAX, COOL ATTITUDES, COOPERS, COPELLA, CORE, COUNTRY TIME, CRACKER JACK, CREEKSIDE, CRISP AND CLEAR, CRUSH, CRYSTAL CASCADE, DOC, DOLE, DORITOS, DR PEPPER, DR WHAM, DRIFTWELL, DRIVE ME, DUYVIS, EVEREST, EVIAN, EVOLVE, FAST TWITCH, FIJI, FINETI, FISHERMANS FRIEND, FLAVOR WORKS, FRITOS, FRUIT SHOOT, FRUIT WORKS, FRUITTELLA, FRUKO, FRUTLY, FUNYUNS, GATORADE, GORSKA NATURA, GRANDMAS, GRAPICO, GREAT BASIN, GURU, H20H, HARVEST SQUEEZE, HAWAII VOLCANIC, HAWAIIAN PUNCH, HOG WASH, HRUSTEAM, HYPER, IBC, INIT, IZZE, JOGUE, JOLLY RANCHER, JUICE TYME, JULUIS, JUMEX, JUNKANOO, KAS MAS, KERRY, KEVITA, KLARBRUNN, KRYSTALICZNE, KURKURE, LA COCINA DE JOSEFINA, LAVAZZA, LAYS, LEMON-X, LIFE, LIFEWTR, LIPTON, MANZANITA SOL, MARKET DELI, MAUI STYLE, MENEHUNE, MENTOS, MIRINDA, MISS VICKIES, MIST TWIST, MONTELLIER, MOR, MOTTS, MR SNAKI, MTN DEW, MUG, MULTI FLOW, MUNCHIES, MUNCHOS, MUSCLE MILK, NAKED, NATURES TWIST, NEHI, NEON ZEBRA, NEW BRAND, NIAGARA, NOBBYS, NON BRANDED, NOO FUZION, NOT APPLICABLE, NUGRAPE, OCEAN SPRAY, OFF THE EATEN PATH, ONE, ORANGE BANG, PATIO, PEARL MILLING COMPANY, PENN DUTCH, PEPSI, PIPERS, PLAN (COLA PG BRAND), PLAN (OATMEAL PG BRAND), PLAN (PASTRIES - WHEAT PG BRAND), PLAN (POTATO CHIPS PG BRAND), PLAN (SPORTS DRINKS PG BRAND), PLAN (WAFERS PG BRAND), POLAR, POLAR SHOCK, POP WORKS, POPCORNERS, POPWORKS, PRIVATE LABEL, PROPEL, PROUD SOURCE, PUKKA, PURE LEAF, QUAKER, RANCHERITOS, RED ROCK DELI, REDLINE, REFRASIA, REIGN, RICOLA, ROCHESTER, ROCKSTAR, ROLD GOLD, ROYAL CROWN, ROYAL HAWAIIAN, RUFFLES, SABRA, SABRITAS, SANDIA, SANDIA SOL, SANTITAS, SCHWEPPES, SCHWIP SCHWAP, SCOTTS, SEAGRAMS, SEAMANS, SEASONS HARVEST, SENSATIONS, SETHNESS, SIBERIAN CHILL, SIERRA MIST, SLICE, SMARTFOOD, SMITHS, SNACK A JACKS, SNAPPLE, SOBE, SODASTREAM, SOULBOOST, SQUIRT, STACYS, STAR, STARBUCKS, STUBBORN, SUN CHIPS, SUNBITES, SUNBREAKS, SUNDROP, SUNFRESH, SUNKIST, SUNNY SKY, SUSSEX, T2, TAHITIAN TREAT, TALKING RAIN, TAMPICO, TAZO, TEA KITCHEN, TODDY, TOMA, TOSTITOS, TROPICANA, TRU ADE, TURBOS, TWISTED, TWISTER, TWISTOS, UNMUDDLED, VENOM, VERMONT, VERNORS, VITA COCO, VITA ICE, VIVA SOL, VOSS, WALKERS, WELCHS, XYIENCE, YACHAK, YEDIGUN, YOO-HOO, YULA",7DAYS,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Product Line,product,Product Line,"ALL OTHER FOODS, CARBONATED SOFT DRINKS (CSD), COFFEE, CONFECTIONERY, COOKIES, CRACKERS, DIPS AND SALSA, ENERGY, FROZEN, FRUIT (EXCLUDE JUICE), GRAINS - CORN, GRAINS - OATS, GRAINS - RICE, GRAINS - WHEAT, JUICE, MODERN DAIRY, NEW, NON FOOD ITEMS, NUTS AND SEEDS, PL_Commercialization, POWER OF ONE, PROTEIN, SALTY, SAVORY, SPORTS, TEA, WATER",ALL OTHER FOODS,
+Time in Stage,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/ed049f753f2128139448?experience=power-bi,Status,project,Project Status,"Active, Closed, Draft, Launch, Prioritized (go to stage-gate)",Active,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Product Category,project,Project Product Category,"Beverage, Dairy, Food",Beverage,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Sector,project_country,Sector,"AMESA, LAB, PBNA, APAC, LAF, PFNA, EUROPE, N/A",AMESA,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Project Type,project_type,Project Sub Type (Groups),"CC, INNO",CC,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Anchor Market,project_country,Anchor Market,"Anchor, Non-Anchor",Anchor,"Anchor Market = 
+ 
+IF(
+    'project_country'[Country] 
+    
+    IN {""Brazil"",
+        ""Canada"",
+         ""China (Mainland)"",
+         ""China (Hong Kong)"",
+         ""China (Taiwan)"",
+         ""Egypt"",
+         ""India"",
+         ""Mexico"",
+         ""Pakistan"",
+         ""Saudi Arabia"",
+         ""Thailand"",
+         ""Turkey"",
+         ""United Kingdom"",
+         ""USA"",
+         ""Vietnam""
+         },
+    ""Anchor"",
+    ""Non-Anchor""
+)"
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Project Complexity Type,project,Technical Complexity,"Blank, Import/Export, Medium Complexity, Alternative Existing Process, Import/Export Express, High Complexity, Low Complexity",Blank,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Launch Year,project,Project Launch Date,"2024, 2025, 2026 etc",2024,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Launch Type,project,Launch Type,"Blank, LTO, LTO Customer, Permanent 52W",Blank,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Brand,product,Product Brand,"7DAYS, 7UP, A&W, ALE81, ALO, ALPENLIEBE, ALS BEVERAGE, ALVALLE, AQUA MINERALE, AQUAFINA, ASSORTED BRANDS, AUNT ROSIES, BAI, BAKEN-ETS, BANG, BARE, BELGIAN, BENENUTS, BIG BLUE, BIG RED, BRISK, BUBBLR, BUBLY, BUNDABERG, CALEBS KOLA, CANADA DRY, CAP N CRUNCH, CEREZZA, CHEERWINE, CHEETOS, CHESTERS, CHOBANI, CHOKIS, CHUPA CHUPS, CISOWIANKA, CITRUS BLAST, CITRUS SPRINGS, CLIMAX, COOL ATTITUDES, COOPERS, COPELLA, CORE, COUNTRY TIME, CRACKER JACK, CREEKSIDE, CRISP AND CLEAR, CRUSH, CRYSTAL CASCADE, DOC, DOLE, DORITOS, DR PEPPER, DR WHAM, DRIFTWELL, DRIVE ME, DUYVIS, EVEREST, EVIAN, EVOLVE, FAST TWITCH, FIJI, FINETI, FISHERMANS FRIEND, FLAVOR WORKS, FRITOS, FRUIT SHOOT, FRUIT WORKS, FRUITTELLA, FRUKO, FRUTLY, FUNYUNS, GATORADE, GORSKA NATURA, GRANDMAS, GRAPICO, GREAT BASIN, GURU, H20H, HARVEST SQUEEZE, HAWAII VOLCANIC, HAWAIIAN PUNCH, HOG WASH, HRUSTEAM, HYPER, IBC, INIT, IZZE, JOGUE, JOLLY RANCHER, JUICE TYME, JULUIS, JUMEX, JUNKANOO, KAS MAS, KERRY, KEVITA, KLARBRUNN, KRYSTALICZNE, KURKURE, LA COCINA DE JOSEFINA, LAVAZZA, LAYS, LEMON-X, LIFE, LIFEWTR, LIPTON, MANZANITA SOL, MARKET DELI, MAUI STYLE, MENEHUNE, MENTOS, MIRINDA, MISS VICKIES, MIST TWIST, MONTELLIER, MOR, MOTTS, MR SNAKI, MTN DEW, MUG, MULTI FLOW, MUNCHIES, MUNCHOS, MUSCLE MILK, NAKED, NATURES TWIST, NEHI, NEON ZEBRA, NEW BRAND, NIAGARA, NOBBYS, NON BRANDED, NOO FUZION, NOT APPLICABLE, NUGRAPE, OCEAN SPRAY, OFF THE EATEN PATH, ONE, ORANGE BANG, PATIO, PEARL MILLING COMPANY, PENN DUTCH, PEPSI, PIPERS, PLAN (COLA PG BRAND), PLAN (OATMEAL PG BRAND), PLAN (PASTRIES - WHEAT PG BRAND), PLAN (POTATO CHIPS PG BRAND), PLAN (SPORTS DRINKS PG BRAND), PLAN (WAFERS PG BRAND), POLAR, POLAR SHOCK, POP WORKS, POPCORNERS, POPWORKS, PRIVATE LABEL, PROPEL, PROUD SOURCE, PUKKA, PURE LEAF, QUAKER, RANCHERITOS, RED ROCK DELI, REDLINE, REFRASIA, REIGN, RICOLA, ROCHESTER, ROCKSTAR, ROLD GOLD, ROYAL CROWN, ROYAL HAWAIIAN, RUFFLES, SABRA, SABRITAS, SANDIA, SANDIA SOL, SANTITAS, SCHWEPPES, SCHWIP SCHWAP, SCOTTS, SEAGRAMS, SEAMANS, SEASONS HARVEST, SENSATIONS, SETHNESS, SIBERIAN CHILL, SIERRA MIST, SLICE, SMARTFOOD, SMITHS, SNACK A JACKS, SNAPPLE, SOBE, SODASTREAM, SOULBOOST, SQUIRT, STACYS, STAR, STARBUCKS, STUBBORN, SUN CHIPS, SUNBITES, SUNBREAKS, SUNDROP, SUNFRESH, SUNKIST, SUNNY SKY, SUSSEX, T2, TAHITIAN TREAT, TALKING RAIN, TAMPICO, TAZO, TEA KITCHEN, TODDY, TOMA, TOSTITOS, TROPICANA, TRU ADE, TURBOS, TWISTED, TWISTER, TWISTOS, UNMUDDLED, VENOM, VERMONT, VERNORS, VITA COCO, VITA ICE, VIVA SOL, VOSS, WALKERS, WELCHS, XYIENCE, YACHAK, YEDIGUN, YOO-HOO, YULA",7DAYS,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,Status,project,Project Status,"Active, Closed, Draft, Launch, Prioritized (go to stage-gate)",Active,
+Revenue Split,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/77928fcbd35856ed43a7?experience=power-bi,1 Yr Net Revenue (USD),project,Year1 Net Revenue USD,"$0 - $5,200,000,000",$0 - $5,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Product Category,project,Project Product Category,"Beverage, Dairy, Food",Beverage,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Sector,project_country,Sector,"AMESA, LAB, PBNA, APAC, LAF, PFNA, EUROPE, N/A",AMESA,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Project Type,project_type,Project Sub Type (Groups),"CC, INNO",CC,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Anchor Market,project_country,Anchor Market,"Anchor, Non-Anchor",Anchor,"Anchor Market = 
+ 
+IF(
+    'project_country'[Country] 
+    
+    IN {""Brazil"",
+        ""Canada"",
+         ""China (Mainland)"",
+         ""China (Hong Kong)"",
+         ""China (Taiwan)"",
+         ""Egypt"",
+         ""India"",
+         ""Mexico"",
+         ""Pakistan"",
+         ""Saudi Arabia"",
+         ""Thailand"",
+         ""Turkey"",
+         ""United Kingdom"",
+         ""USA"",
+         ""Vietnam""
+         },
+    ""Anchor"",
+    ""Non-Anchor""
+)"
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Project Complexity Type,project,Technical Complexity,"Blank, Import/Export, Medium Complexity, Alternative Existing Process, Import/Export Express, High Complexity, Low Complexity",Blank,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Launch Year,project,Project Launch Date,"2024, 2025, 2026 etc",2024,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Launch Type,project,Launch Type,"Blank, LTO, LTO Customer, Permanent 52W",Blank,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Brand,product,Product Brand,"7DAYS, 7UP, A&W, ALE81, ALO, ALPENLIEBE, ALS BEVERAGE, ALVALLE, AQUA MINERALE, AQUAFINA, ASSORTED BRANDS, AUNT ROSIES, BAI, BAKEN-ETS, BANG, BARE, BELGIAN, BENENUTS, BIG BLUE, BIG RED, BRISK, BUBBLR, BUBLY, BUNDABERG, CALEBS KOLA, CANADA DRY, CAP N CRUNCH, CEREZZA, CHEERWINE, CHEETOS, CHESTERS, CHOBANI, CHOKIS, CHUPA CHUPS, CISOWIANKA, CITRUS BLAST, CITRUS SPRINGS, CLIMAX, COOL ATTITUDES, COOPERS, COPELLA, CORE, COUNTRY TIME, CRACKER JACK, CREEKSIDE, CRISP AND CLEAR, CRUSH, CRYSTAL CASCADE, DOC, DOLE, DORITOS, DR PEPPER, DR WHAM, DRIFTWELL, DRIVE ME, DUYVIS, EVEREST, EVIAN, EVOLVE, FAST TWITCH, FIJI, FINETI, FISHERMANS FRIEND, FLAVOR WORKS, FRITOS, FRUIT SHOOT, FRUIT WORKS, FRUITTELLA, FRUKO, FRUTLY, FUNYUNS, GATORADE, GORSKA NATURA, GRANDMAS, GRAPICO, GREAT BASIN, GURU, H20H, HARVEST SQUEEZE, HAWAII VOLCANIC, HAWAIIAN PUNCH, HOG WASH, HRUSTEAM, HYPER, IBC, INIT, IZZE, JOGUE, JOLLY RANCHER, JUICE TYME, JULUIS, JUMEX, JUNKANOO, KAS MAS, KERRY, KEVITA, KLARBRUNN, KRYSTALICZNE, KURKURE, LA COCINA DE JOSEFINA, LAVAZZA, LAYS, LEMON-X, LIFE, LIFEWTR, LIPTON, MANZANITA SOL, MARKET DELI, MAUI STYLE, MENEHUNE, MENTOS, MIRINDA, MISS VICKIES, MIST TWIST, MONTELLIER, MOR, MOTTS, MR SNAKI, MTN DEW, MUG, MULTI FLOW, MUNCHIES, MUNCHOS, MUSCLE MILK, NAKED, NATURES TWIST, NEHI, NEON ZEBRA, NEW BRAND, NIAGARA, NOBBYS, NON BRANDED, NOO FUZION, NOT APPLICABLE, NUGRAPE, OCEAN SPRAY, OFF THE EATEN PATH, ONE, ORANGE BANG, PATIO, PEARL MILLING COMPANY, PENN DUTCH, PEPSI, PIPERS, PLAN (COLA PG BRAND), PLAN (OATMEAL PG BRAND), PLAN (PASTRIES - WHEAT PG BRAND), PLAN (POTATO CHIPS PG BRAND), PLAN (SPORTS DRINKS PG BRAND), PLAN (WAFERS PG BRAND), POLAR, POLAR SHOCK, POP WORKS, POPCORNERS, POPWORKS, PRIVATE LABEL, PROPEL, PROUD SOURCE, PUKKA, PURE LEAF, QUAKER, RANCHERITOS, RED ROCK DELI, REDLINE, REFRASIA, REIGN, RICOLA, ROCHESTER, ROCKSTAR, ROLD GOLD, ROYAL CROWN, ROYAL HAWAIIAN, RUFFLES, SABRA, SABRITAS, SANDIA, SANDIA SOL, SANTITAS, SCHWEPPES, SCHWIP SCHWAP, SCOTTS, SEAGRAMS, SEAMANS, SEASONS HARVEST, SENSATIONS, SETHNESS, SIBERIAN CHILL, SIERRA MIST, SLICE, SMARTFOOD, SMITHS, SNACK A JACKS, SNAPPLE, SOBE, SODASTREAM, SOULBOOST, SQUIRT, STACYS, STAR, STARBUCKS, STUBBORN, SUN CHIPS, SUNBITES, SUNBREAKS, SUNDROP, SUNFRESH, SUNKIST, SUNNY SKY, SUSSEX, T2, TAHITIAN TREAT, TALKING RAIN, TAMPICO, TAZO, TEA KITCHEN, TODDY, TOMA, TOSTITOS, TROPICANA, TRU ADE, TURBOS, TWISTED, TWISTER, TWISTOS, UNMUDDLED, VENOM, VERMONT, VERNORS, VITA COCO, VITA ICE, VIVA SOL, VOSS, WALKERS, WELCHS, XYIENCE, YACHAK, YEDIGUN, YOO-HOO, YULA",7DAYS,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,Status,project,Project Status,"Active, Closed, Draft, Launch, Prioritized (go to stage-gate)",Active,
+Revenue Analysis,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/071d55c052775c5e82f9?experience=power-bi,1 Yr Net Revenue (USD),project,Year1 Net Revenue USD,"$0 - $5,200,000,000",$0 - $5,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Product Category,project,Project Product Category,"Beverage, Dairy, Food",Beverage,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Sector,project_country,Sector,"AMESA, LAB, PBNA, APAC, LAF, PFNA, EUROPE, N/A",AMESA,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Project Type,project_type,Project Sub Type (Groups),"CC, INNO",CC,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Anchor Market,project_country,Anchor Market,"Anchor, Non-Anchor",Anchor,"Anchor Market = 
+ 
+IF(
+    'project_country'[Country] 
+    
+    IN {""Brazil"",
+        ""Canada"",
+         ""China (Mainland)"",
+         ""China (Hong Kong)"",
+         ""China (Taiwan)"",
+         ""Egypt"",
+         ""India"",
+         ""Mexico"",
+         ""Pakistan"",
+         ""Saudi Arabia"",
+         ""Thailand"",
+         ""Turkey"",
+         ""United Kingdom"",
+         ""USA"",
+         ""Vietnam""
+         },
+    ""Anchor"",
+    ""Non-Anchor""
+)"
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Project Complexity Type,project,Technical Complexity,"Blank, Import/Export, Medium Complexity, Alternative Existing Process, Import/Export Express, High Complexity, Low Complexity",Blank,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Launch Year,project,Project Launch Date,"2024, 2025, 2026 etc",2024,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Launch Type,project,Launch Type,"Blank, LTO, LTO Customer, Permanent 52W",Blank,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Brand,product,Product Brand,"7DAYS, 7UP, A&W, ALE81, ALO, ALPENLIEBE, ALS BEVERAGE, ALVALLE, AQUA MINERALE, AQUAFINA, ASSORTED BRANDS, AUNT ROSIES, BAI, BAKEN-ETS, BANG, BARE, BELGIAN, BENENUTS, BIG BLUE, BIG RED, BRISK, BUBBLR, BUBLY, BUNDABERG, CALEBS KOLA, CANADA DRY, CAP N CRUNCH, CEREZZA, CHEERWINE, CHEETOS, CHESTERS, CHOBANI, CHOKIS, CHUPA CHUPS, CISOWIANKA, CITRUS BLAST, CITRUS SPRINGS, CLIMAX, COOL ATTITUDES, COOPERS, COPELLA, CORE, COUNTRY TIME, CRACKER JACK, CREEKSIDE, CRISP AND CLEAR, CRUSH, CRYSTAL CASCADE, DOC, DOLE, DORITOS, DR PEPPER, DR WHAM, DRIFTWELL, DRIVE ME, DUYVIS, EVEREST, EVIAN, EVOLVE, FAST TWITCH, FIJI, FINETI, FISHERMANS FRIEND, FLAVOR WORKS, FRITOS, FRUIT SHOOT, FRUIT WORKS, FRUITTELLA, FRUKO, FRUTLY, FUNYUNS, GATORADE, GORSKA NATURA, GRANDMAS, GRAPICO, GREAT BASIN, GURU, H20H, HARVEST SQUEEZE, HAWAII VOLCANIC, HAWAIIAN PUNCH, HOG WASH, HRUSTEAM, HYPER, IBC, INIT, IZZE, JOGUE, JOLLY RANCHER, JUICE TYME, JULUIS, JUMEX, JUNKANOO, KAS MAS, KERRY, KEVITA, KLARBRUNN, KRYSTALICZNE, KURKURE, LA COCINA DE JOSEFINA, LAVAZZA, LAYS, LEMON-X, LIFE, LIFEWTR, LIPTON, MANZANITA SOL, MARKET DELI, MAUI STYLE, MENEHUNE, MENTOS, MIRINDA, MISS VICKIES, MIST TWIST, MONTELLIER, MOR, MOTTS, MR SNAKI, MTN DEW, MUG, MULTI FLOW, MUNCHIES, MUNCHOS, MUSCLE MILK, NAKED, NATURES TWIST, NEHI, NEON ZEBRA, NEW BRAND, NIAGARA, NOBBYS, NON BRANDED, NOO FUZION, NOT APPLICABLE, NUGRAPE, OCEAN SPRAY, OFF THE EATEN PATH, ONE, ORANGE BANG, PATIO, PEARL MILLING COMPANY, PENN DUTCH, PEPSI, PIPERS, PLAN (COLA PG BRAND), PLAN (OATMEAL PG BRAND), PLAN (PASTRIES - WHEAT PG BRAND), PLAN (POTATO CHIPS PG BRAND), PLAN (SPORTS DRINKS PG BRAND), PLAN (WAFERS PG BRAND), POLAR, POLAR SHOCK, POP WORKS, POPCORNERS, POPWORKS, PRIVATE LABEL, PROPEL, PROUD SOURCE, PUKKA, PURE LEAF, QUAKER, RANCHERITOS, RED ROCK DELI, REDLINE, REFRASIA, REIGN, RICOLA, ROCHESTER, ROCKSTAR, ROLD GOLD, ROYAL CROWN, ROYAL HAWAIIAN, RUFFLES, SABRA, SABRITAS, SANDIA, SANDIA SOL, SANTITAS, SCHWEPPES, SCHWIP SCHWAP, SCOTTS, SEAGRAMS, SEAMANS, SEASONS HARVEST, SENSATIONS, SETHNESS, SIBERIAN CHILL, SIERRA MIST, SLICE, SMARTFOOD, SMITHS, SNACK A JACKS, SNAPPLE, SOBE, SODASTREAM, SOULBOOST, SQUIRT, STACYS, STAR, STARBUCKS, STUBBORN, SUN CHIPS, SUNBITES, SUNBREAKS, SUNDROP, SUNFRESH, SUNKIST, SUNNY SKY, SUSSEX, T2, TAHITIAN TREAT, TALKING RAIN, TAMPICO, TAZO, TEA KITCHEN, TODDY, TOMA, TOSTITOS, TROPICANA, TRU ADE, TURBOS, TWISTED, TWISTER, TWISTOS, UNMUDDLED, VENOM, VERMONT, VERNORS, VITA COCO, VITA ICE, VIVA SOL, VOSS, WALKERS, WELCHS, XYIENCE, YACHAK, YEDIGUN, YOO-HOO, YULA",7DAYS,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Product Line,product,Product Line,"ALL OTHER FOODS, CARBONATED SOFT DRINKS (CSD), COFFEE, CONFECTIONERY, COOKIES, CRACKERS, DIPS AND SALSA, ENERGY, FROZEN, FRUIT (EXCLUDE JUICE), GRAINS - CORN, GRAINS - OATS, GRAINS - RICE, GRAINS - WHEAT, JUICE, MODERN DAIRY, NEW, NON FOOD ITEMS, NUTS AND SEEDS, PL_Commercialization, POWER OF ONE, PROTEIN, SALTY, SAVORY, SPORTS, TEA, WATER",ALL OTHER FOODS,
+Speed to Market,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/a3944fb2c85449a5e595?experience=power-bi,Status,project,Project Status,"Active, Closed, Draft, Launch, Prioritized (go to stage-gate)",Active,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Product Category,project,Project Product Category,"Beverage, Dairy, Food",Beverage,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Sector,project_country,Sector,"AMESA, LAB, PBNA, APAC, LAF, PFNA, EUROPE, N/A",AMESA,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Project Type,project_type,Project Sub Type (Groups),"CC, INNO",CC,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Anchor Market,project_country,Anchor Market,"Anchor, Non-Anchor",Anchor,"Anchor Market = 
+ 
+IF(
+    'project_country'[Country] 
+    
+    IN {""Brazil"",
+        ""Canada"",
+         ""China (Mainland)"",
+         ""China (Hong Kong)"",
+         ""China (Taiwan)"",
+         ""Egypt"",
+         ""India"",
+         ""Mexico"",
+         ""Pakistan"",
+         ""Saudi Arabia"",
+         ""Thailand"",
+         ""Turkey"",
+         ""United Kingdom"",
+         ""USA"",
+         ""Vietnam""
+         },
+    ""Anchor"",
+    ""Non-Anchor""
+)"
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Project Complexity Type,project,Technical Complexity,"Blank, Import/Export, Medium Complexity, Alternative Existing Process, Import/Export Express, High Complexity, Low Complexity",Blank,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Launch Year,project,Project Launch Date,"2024, 2025, 2026 etc",2024,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Launch Type,project,Launch Type,"Blank, LTO, LTO Customer, Permanent 52W",Blank,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Brand,product,Product Brand,"7DAYS, 7UP, A&W, ALE81, ALO, ALPENLIEBE, ALS BEVERAGE, ALVALLE, AQUA MINERALE, AQUAFINA, ASSORTED BRANDS, AUNT ROSIES, BAI, BAKEN-ETS, BANG, BARE, BELGIAN, BENENUTS, BIG BLUE, BIG RED, BRISK, BUBBLR, BUBLY, BUNDABERG, CALEBS KOLA, CANADA DRY, CAP N CRUNCH, CEREZZA, CHEERWINE, CHEETOS, CHESTERS, CHOBANI, CHOKIS, CHUPA CHUPS, CISOWIANKA, CITRUS BLAST, CITRUS SPRINGS, CLIMAX, COOL ATTITUDES, COOPERS, COPELLA, CORE, COUNTRY TIME, CRACKER JACK, CREEKSIDE, CRISP AND CLEAR, CRUSH, CRYSTAL CASCADE, DOC, DOLE, DORITOS, DR PEPPER, DR WHAM, DRIFTWELL, DRIVE ME, DUYVIS, EVEREST, EVIAN, EVOLVE, FAST TWITCH, FIJI, FINETI, FISHERMANS FRIEND, FLAVOR WORKS, FRITOS, FRUIT SHOOT, FRUIT WORKS, FRUITTELLA, FRUKO, FRUTLY, FUNYUNS, GATORADE, GORSKA NATURA, GRANDMAS, GRAPICO, GREAT BASIN, GURU, H20H, HARVEST SQUEEZE, HAWAII VOLCANIC, HAWAIIAN PUNCH, HOG WASH, HRUSTEAM, HYPER, IBC, INIT, IZZE, JOGUE, JOLLY RANCHER, JUICE TYME, JULUIS, JUMEX, JUNKANOO, KAS MAS, KERRY, KEVITA, KLARBRUNN, KRYSTALICZNE, KURKURE, LA COCINA DE JOSEFINA, LAVAZZA, LAYS, LEMON-X, LIFE, LIFEWTR, LIPTON, MANZANITA SOL, MARKET DELI, MAUI STYLE, MENEHUNE, MENTOS, MIRINDA, MISS VICKIES, MIST TWIST, MONTELLIER, MOR, MOTTS, MR SNAKI, MTN DEW, MUG, MULTI FLOW, MUNCHIES, MUNCHOS, MUSCLE MILK, NAKED, NATURES TWIST, NEHI, NEON ZEBRA, NEW BRAND, NIAGARA, NOBBYS, NON BRANDED, NOO FUZION, NOT APPLICABLE, NUGRAPE, OCEAN SPRAY, OFF THE EATEN PATH, ONE, ORANGE BANG, PATIO, PEARL MILLING COMPANY, PENN DUTCH, PEPSI, PIPERS, PLAN (COLA PG BRAND), PLAN (OATMEAL PG BRAND), PLAN (PASTRIES - WHEAT PG BRAND), PLAN (POTATO CHIPS PG BRAND), PLAN (SPORTS DRINKS PG BRAND), PLAN (WAFERS PG BRAND), POLAR, POLAR SHOCK, POP WORKS, POPCORNERS, POPWORKS, PRIVATE LABEL, PROPEL, PROUD SOURCE, PUKKA, PURE LEAF, QUAKER, RANCHERITOS, RED ROCK DELI, REDLINE, REFRASIA, REIGN, RICOLA, ROCHESTER, ROCKSTAR, ROLD GOLD, ROYAL CROWN, ROYAL HAWAIIAN, RUFFLES, SABRA, SABRITAS, SANDIA, SANDIA SOL, SANTITAS, SCHWEPPES, SCHWIP SCHWAP, SCOTTS, SEAGRAMS, SEAMANS, SEASONS HARVEST, SENSATIONS, SETHNESS, SIBERIAN CHILL, SIERRA MIST, SLICE, SMARTFOOD, SMITHS, SNACK A JACKS, SNAPPLE, SOBE, SODASTREAM, SOULBOOST, SQUIRT, STACYS, STAR, STARBUCKS, STUBBORN, SUN CHIPS, SUNBITES, SUNBREAKS, SUNDROP, SUNFRESH, SUNKIST, SUNNY SKY, SUSSEX, T2, TAHITIAN TREAT, TALKING RAIN, TAMPICO, TAZO, TEA KITCHEN, TODDY, TOMA, TOSTITOS, TROPICANA, TRU ADE, TURBOS, TWISTED, TWISTER, TWISTOS, UNMUDDLED, VENOM, VERMONT, VERNORS, VITA COCO, VITA ICE, VIVA SOL, VOSS, WALKERS, WELCHS, XYIENCE, YACHAK, YEDIGUN, YOO-HOO, YULA",7DAYS,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Product Line,product,Product Line,"ALL OTHER FOODS, CARBONATED SOFT DRINKS (CSD), COFFEE, CONFECTIONERY, COOKIES, CRACKERS, DIPS AND SALSA, ENERGY, FROZEN, FRUIT (EXCLUDE JUICE), GRAINS - CORN, GRAINS - OATS, GRAINS - RICE, GRAINS - WHEAT, JUICE, MODERN DAIRY, NEW, NON FOOD ITEMS, NUTS AND SEEDS, PL_Commercialization, POWER OF ONE, PROTEIN, SALTY, SAVORY, SPORTS, TEA, WATER",ALL OTHER FOODS,
+Project Details,https://app.powerbi.com/groups/191f5fcc-acd1-46fe-bdab-b8234bc0d93e/reports/dfc8e4da-92f9-4d84-9f20-4406797efb30/8cbae5b0ccc24f02d93e?experience=power-bi,Status,project,Project Status,"Active, Closed, Draft, Launch, Prioritized (go to stage-gate)",Active,
