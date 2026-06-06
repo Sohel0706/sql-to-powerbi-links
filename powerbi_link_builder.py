@@ -18,13 +18,18 @@ BASE_URL = (
 MAPPING_FILE = Path("powerbi_field_mapping.csv")
 
 # Paste your SQL query here when running this file directly from VS Code.
-SQL_QUERY = """SELECT
+SQL_QUERY = """WITH filtered_projects AS (
+    SELECT [Project ID], [Project Description], [Incrementality Percentage Value], [Project Status]
+    FROM project
+    WHERE [Project Status] NOT IN ('Cancelled', 'On-Hold')
+)
+SELECT
     p.[Project ID],
     p.[Project Description],
     d.[Year],
     SUM(p.[Year1 Net Revenue USD])              AS SumYear1_Net_Revenue_USD,
     SUM(p.[Incrementality Percentage Value])     AS SumIncrementality_Percentage_Value
-FROM project p
+FROM filtered_projects p
 JOIN project_country pc ON <join_key>
 JOIN project_type pt    ON <join_key>
 JOIN date_dim d         ON <date_join_key>
@@ -33,10 +38,9 @@ WHERE pc.Sector = 'PBNA'
   AND d.[Year] IN (2025, 2026)
   AND pt.[Project Sub Type] IN ('Breakthrough (in)', 'Breakthrough (out)', 'Reframe', 'Refresh')
   AND p.[Incrementality Percentage Value] >= 0.01
-  AND p.[Project Status] NOT IN ('Cancelled', 'On-Hold')
 GROUP BY ROLLUP (p.[Project ID], p.[Project Description], d.[Year])
 ORDER BY
-    GROUPING(p.[Project ID]) DESC,             -- grand total first
+    GROUPING(p.[Project ID]) DESC,
     SumYear1_Net_Revenue_USD DESC,
     p.[Project ID],
     p.[Project Description],
@@ -108,16 +112,36 @@ def add_alias(mapping, target_table, target_field, alias_table, alias_field):
         mapping[(normalize_name(alias_table), normalize_name(alias_field))] = target
 
 
-def table_aliases(statement):
-    """Return SQL aliases such as p -> project for one parsed SQL statement."""
+def resolve_cte_lineage(statement):
+    """
+    Build a map resolving CTE references and aliases back to physical base tables.
+    Returns a dictionary mapping: normalize_name(alias/cte_name) -> real_table_name
+    """
+    cte_mapping = {}
+    
+    # 1. Map CTE names to their source physical tables
+    for cte in statement.find_all(exp.CTE):
+        cte_name = normalize_name(cte.alias)
+        # Find the first physical table referenced inside the CTE definition
+        first_table = cte.this.find(exp.Table)
+        if first_table and first_table.name:
+            cte_mapping[cte_name] = first_table.name
+
+    # 2. Map standard aliases, tracking through CTE references if necessary
     aliases = {}
     for table in statement.find_all(exp.Table):
         name = table.name
         alias = table.alias_or_name
+        
+        normalized_name = normalize_name(name)
+        # If the table is actually a CTE, resolve it to the base table
+        real_table = cte_mapping.get(normalized_name, name)
+        
         if name:
-            aliases[normalize_name(name)] = name
+            aliases[normalized_name] = real_table
         if alias and name:
-            aliases[normalize_name(alias)] = name
+            aliases[normalize_name(alias)] = real_table
+            
     return aliases
 
 
@@ -144,6 +168,7 @@ def column_ref(node, aliases):
     if not isinstance(node, exp.Column):
         return None
     table = node.table or ""
+    # Use the tracking alias dictionary to get the physical base table name
     table = aliases.get(normalize_name(table), table)
     return table, node.name
 
@@ -179,6 +204,9 @@ def extract_conditions(node, aliases, negated=False):
         return
     if isinstance(node, exp.Not):
         yield from extract_conditions(node.this, aliases, not negated)
+        return
+    if isinstance(node, exp.And):
+        yield from extract_conditions(node.left, aliases, negated)
         return
     if isinstance(node, exp.And):
         yield from extract_conditions(node.left, aliases, negated)
@@ -251,7 +279,8 @@ def collect_filters(sql_query):
     filters = []
     seen = set()
     for statement in parsed:
-        aliases = table_aliases(statement)
+        # Replaced table_aliases with resolve_cte_lineage
+        aliases = resolve_cte_lineage(statement)
         for where in statement.find_all(exp.Where):
             for ref, operator, values in extract_conditions(where, aliases):
                 part = mapped_filter(ref, operator, values, mapping)
